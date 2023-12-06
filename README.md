@@ -1,11 +1,11 @@
 # getprosody
 get prosodic measurements from Praat, and export those
 
-## REQ:
+## REQ
 This script requires Praat (www.praat.org).
 The script was developed in Praat version 6.4 (dated 15 Nov 2023). 
 
-## AIM:
+## AIM
 This script performs various prosodic measurement on
 a single selected Sound object, and exports the resulting values
 to a text file (a single text file for each input audio file).  
@@ -15,16 +15,16 @@ directory (also hard coded in the script).
 The list of files matching the pattern is written as a Strings object 
 to the working (output) directory.  
 
-## CONTEXT:
+## CONTEXT
 Longitudinal corpus of University College English Accents (LUCEA)
 
-## CONTACT: 
+## CONTACT 
 Hugo Quené, h.quene@uu.nl, www.hugoquene.nl
 
-## LICENSE: 
+## LICENSE
 GNU GPL 3.0 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-## VERSION:
+## VERSION
 
 0.4	2023.12.06      added quantile values (0.20,0.25,0.50,0.75,0.80),
 			  			changed order of exported values (median among quantiles),
@@ -39,7 +39,8 @@ GNU GPL 3.0 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 0.1	2023.11.30		first release, for single selected Sound
 
-# EXPORTED PROSODY DATA (tab separated):
+# EXPORTED PROSODY DATA (tab separated)
+
 soundname$, 
 'durtotal:3', 'durtalk:3', talkchunks, 'durnontalk:3', nontalkchunks,
 'nvoiced', 'f0meanHz:2', 'f0meanST:2', 'f0minST:2', 'f0maxST:2', 'f0sdST:2', 
