@@ -68,7 +68,7 @@ f0maxST:2	maximum of f0 (semitones re 100 Hz)
 
 f0sdST:2	standard deviation of f0 (semitones re 100 Hz)
 
-f0qn1ST:2	P20 (first quantile) of f0 (semitones re 100 Hz)
+f0qn1ST:2	P20 (first quintile) of f0 (semitones re 100 Hz)
 
 f0q1ST:2	P25 (first quartile) of f0 (semitones re 100 Hz)
 
@@ -76,7 +76,7 @@ f0q2ST:2	P50 (median, second quartile) of f0 (semitones re 100 Hz)
 
 f0q3ST:2	P75 (third quartile) of f0 (semitones re 100 Hz)
 
-f0qn4ST:2	P80 (fourth quantile) of f0 (semitones re 100 Hz)
+f0qn4ST:2	P80 (fourth quintile) of f0 (semitones re 100 Hz)
 
 intmean:2	mean of intensity (dB)
 
@@ -86,7 +86,7 @@ intmax:2	maximum intensity (dB)
 
 intsd:2		standard deviation of intensity (dB)
 
-intqn1:2	P20 (first quantile) of intensity (dB)
+intqn1:2	P20 (first quintile) of intensity (dB)
 
 intq1:2		P25 (first quartile) of intensity (dB)
 
@@ -94,7 +94,7 @@ intq2:2		P50 (median, second quartile) of intensity (dB)
 
 intq3:2		P75 (third quartile) of intensity (dB)
 
-intqn4:2	P80 (fourth quantile) of intensity (dB)
+intqn4:2	P80 (fourth quintile) of intensity (dB)
 
 ltas1:1		energy (dB) in Ltas band 1 (0-1600 Hz)
 
