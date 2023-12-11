@@ -39,13 +39,41 @@ GNU GPL 3.0 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 0.1	2023.11.30		first release, for single selected Sound
 
-# EXPORTED PROSODY DATA (tab separated)
+# CODEBOOK OF PROSODY DATA
 
-soundname$, 
-'durtotal:3', 'durtalk:3', talkchunks, 'durnontalk:3', nontalkchunks,
-'nvoiced', 'f0meanHz:2', 'f0meanST:2', 'f0minST:2', 'f0maxST:2', 'f0sdST:2', 
-'f0qn1ST:2', 'f0q1ST:2', 'f0q2ST:2', 'f0q3ST:2', 'f0qn4ST:2', 
-'intmean:2', 'intmin:2', 'intmax:2', 'intsd:2', 
-'intqn1:2', 'intq1:2', 'intq2:2', 'intq3:2', 'intqn4:2', 
-'ltas1:1', 'ltas2:1', 'ltas3:1', 'ltasslope:1', 'ltassd:1',
-'nrsylls', 'temp1:2' [syl/s], 'temp2:3' [s/syl]
+The data are separated by tabs. The suffix `$` indicates a character string. The colon and integer number indicates the number of decimal digits. 
+
+soundname$	name of Sound object
+durtotal:3	duration of Sound object (s)
+durtalk:3	duration of talking time (s)
+talkchunks	number of talking chunks 
+durnontalk:3	duration of nontalking time (s)
+nontalkchunks	number of nontalking chunks
+nvoiced		number of voiced frames in Pitch object (each frame 0.015 s)
+f0meanHz:2	mean of f0 (Hz)
+f0meanST:2	mean of f0 (semitones relative to 100 Hz)
+f0minST:2	minimum of f0 (semitones re 100 Hz)
+f0maxST:2	maximum of f0 (semitones re 100 Hz)
+f0sdST:2	standard deviation of f0 (semitones re 100 Hz)
+f0qn1ST:2	P20 (first quantile) of f0 (semitones re 100 Hz)
+f0q1ST:2	P25 (first quartile) of f0 (semitones re 100 Hz)
+f0q2ST:2	P50 (median, second quartile) of f0 (semitones re 100 Hz)
+f0q3ST:2	P75 (third quartile) of f0 (semitones re 100 Hz)
+f0qn4ST:2	P80 (fourth quantile) of f0 (semitones re 100 Hz)
+intmean:2	mean of intensity (dB)
+intmin:2	minimum of intensity (dB)
+intmax:2	maximum intensity (dB)
+intsd:2		standard deviation of intensity (dB)
+intqn1:2	P20 (first quantile) of intensity (dB)
+intq1:2		P25 (first quartile) of intensity (dB)
+intq2:2		P50 (median, second quartile) of intensity (dB)
+intq3:2		P75 (third quartile) of intensity (dB)
+intqn4:2	P80 (fourth quantile) of intensity (dB)
+ltas1:1		energy (dB) in Ltas band 1 (0-1600 Hz)
+ltas2:1		energy (dB) in Ltas band 2 (1600-3200 Hz)
+ltas3:1		energy (dB) in Ltas band 3 (3200-4800 Hz)
+ltasslope:1	average enery in Ltas bands 2+3 minus energy in band 1
+ltassd:1	standard deviation of energy (dB) across bands
+nrsylls		number of syllables (vowel nuclei)
+temp1:2		tempo (syl/s)
+temp2:3		average syllable duration (s/syl)
